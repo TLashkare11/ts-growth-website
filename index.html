@@ -1,166 +1,179 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080808">
-  <meta name="description" content="TS GROWTH helps businesses grow with social media marketing, content planning, video editing, graphic design, Meta Ads and lead generation.">
-  <title>TS GROWTH | Digital Strategies. Real Growth.</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TS GROWTH | Digital Marketing Agency</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#080808;color:#f7f5ef;font-family:Arial,sans-serif;line-height:1.7}
+a{text-decoration:none;color:inherit}
+:root{--gold:#d4af37;--panel:#121212;--muted:#b5b5b5}
+header{padding:20px 7%;display:flex;justify-content:space-between;align-items:center;gap:20px;background:#080808;border-bottom:1px solid #302b1d;position:sticky;top:0;z-index:10}
+.logo{font-size:25px;font-weight:900;white-space:nowrap}
+.logo span,h1 span,h2 span{color:var(--gold)}
+nav{display:flex;flex-wrap:wrap;gap:18px}
+nav a{font-size:14px;color:#ddd}
+nav a:hover{color:var(--gold)}
+.hero{min-height:600px;padding:100px 8%;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;background:radial-gradient(ellipse at 80% 35%,#302713,transparent 40%),#080808}
+.eyebrow{color:var(--gold);font-size:12px;font-weight:bold;letter-spacing:3px;margin-bottom:20px}
+h1{font-size:clamp(38px,6vw,72px);line-height:1.15}
+h2{font-size:clamp(30px,4.5vw,48px);line-height:1.2;margin-bottom:22px}
+.intro{color:var(--muted);max-width:620px;margin:25px 0 30px}
+.btn{display:inline-block;padding:13px 22px;background:var(--gold);color:#080808;font-size:12px;font-weight:bold;border:1px solid var(--gold);cursor:pointer}
+.btn:hover{background:transparent;color:var(--gold)}
+.section{padding:85px 8%}
+.section-intro{color:var(--muted);margin-bottom:30px}
+.services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:30px}
+.service,.contact-card,.location-box,.form-box,.portfolio-card{padding:28px;background:linear-gradient(145deg,#171717,#0d0d0d);border:1px solid #302b1d}
+.service:hover,.contact-card:hover{border-color:var(--gold)}
+.number,.portfolio-card span{color:var(--gold);font-size:12px;letter-spacing:2px;margin-bottom:15px}
+.service h3{font-size:21px;margin-bottom:10px}
+.service p,.about p,.contact-intro,.contact-card p,.location-box p{color:var(--muted)}
+.portfolio{background:#101010;border-top:1px solid #302b1d;border-bottom:1px solid #302b1d}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:30px}
+.portfolio-card{min-height:170px;display:flex;flex-direction:column;justify-content:flex-end}
+.portfolio-card span{margin-bottom:auto}
+.portfolio-card p{color:var(--muted);font-size:13px}
+.about{background:#111}
+.about p{max-width:750px;margin-bottom:14px}
+.contact{text-align:center;background:radial-gradient(ellipse at center,#241e10,#080808 70%)}
+.contact-intro{max-width:700px;margin:auto}
+.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:35px 0;text-align:left}
+.contact-card h3{margin-bottom:10px}
+.contact-card p{margin-bottom:12px;overflow-wrap:anywhere}
+.contact-card a{color:var(--gold);font-weight:bold}
+.location-box,.form-box{text-align:left;margin-top:25px}
+.location-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.outline{background:transparent;color:var(--gold)}
+label{display:block;margin:16px 0 6px;font-size:14px}
+input,select,textarea{width:100%;padding:13px;background:#080808;color:white;border:1px solid #393327;font:inherit}
+form button{margin-top:22px}
+.small{color:#888;font-size:12px;margin-top:16px}
+footer{padding:30px 8%;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:15px;border-top:1px solid #302b1d;color:#aaa}
+.whatsapp-float{position:fixed;right:18px;bottom:18px;z-index:20;padding:13px 18px;border-radius:40px;background:var(--gold);color:#080808;font-weight:bold;box-shadow:0 4px 20px #000}
+@media(max-width:650px){header{flex-direction:column;padding:17px 5%}nav{justify-content:center;gap:12px}.hero{padding:75px 6%;min-height:500px}.section{padding:65px 6%}.services,.contact-grid,.portfolio-grid{grid-template-columns:1fr}.service,.contact-card,.location-box,.form-box{padding:22px}footer{flex-direction:column;text-align:center}}
+</style>
 </head>
 <body>
 
-  <header>
-    <a class="logo" href="#home">TS <span>GROWTH.</span></a>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+<a class="logo" href="#home">TS <span>GROWTH.</span></a>
+<nav>
+<a href="#home">Home</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#contact">Contact</a>
+</nav>
+</header>
 
-  <main>
-    <section class="hero" id="home">
-      <p class="eyebrow">DIGITAL STRATEGIES. REAL GROWTH.</p>
-      <h1>MAKE YOUR BRAND<br><span>IMPOSSIBLE TO IGNORE.</span></h1>
-      <p class="intro">
-        We turn creative ideas into powerful digital experiences.
-        From social media to lead generation, we help your business
-        build its presence and reach more customers.
-      </p>
-      <a class="btn" href="#contact">LET'S GROW TOGETHER ↗</a>
-      <div class="hero-note">STRATEGY <span>•</span> CREATIVITY <span>•</span> GROWTH</div>
-    </section>
+<main>
+<section class="hero" id="home">
+<p class="eyebrow">DIGITAL STRATEGIES. REAL GROWTH.</p>
+<h1>MAKE YOUR BRAND<br><span>IMPOSSIBLE TO IGNORE.</span></h1>
+<p class="intro">We help businesses grow with creative content, social media marketing, digital advertising and strategies built for real results.</p>
+<a class="btn" href="#contact">LET'S GROW TOGETHER ↗</a>
+</section>
 
-    <section class="section" id="services">
-      <p class="eyebrow">WHAT WE DO</p>
-      <h2>Services built for <span>growth.</span></h2>
-      <p class="section-intro">
-        Everything your business needs to build a stronger digital presence.
-      </p>
+<section class="section" id="services">
+<p class="eyebrow">WHAT WE DO</p>
+<h2>Services built for <span>growth.</span></h2>
+<p class="section-intro">Creative and digital services for your business.</p>
+<div class="services">
+<article class="service"><div class="number">01 / SOCIAL</div><h3>Social Media Marketing</h3><p>Grow your online presence and connect with your audience.</p></article>
+<article class="service"><div class="number">02 / STRATEGY</div><h3>Content Planning</h3><p>Plan posts, reels and consistent content for your brand.</p></article>
+<article class="service"><div class="number">03 / VIDEO</div><h3>Video & Reel Editing</h3><p>Professional, engaging reels and promotional videos.</p></article>
+<article class="service"><div class="number">04 / DESIGN</div><h3>Graphic Design</h3><p>Posters, social media creatives, banners and visual branding.</p></article>
+<article class="service"><div class="number">05 / CONTENT</div><h3>Promotional Content</h3><p>Creative content to showcase your products and services.</p></article>
+<article class="service"><div class="number">06 / BRANDING</div><h3>Brand Promotion</h3><p>Build brand awareness and reach your target audience.</p></article>
+<article class="service"><div class="number">07 / ADS</div><h3>Meta Ads</h3><p>Facebook and Instagram advertising campaigns.</p></article>
+<article class="service"><div class="number">08 / GROWTH</div><h3>Lead Generation</h3><p>Campaigns designed to attract potential customers and enquiries.</p></article>
+</div>
+</section>
 
-      <div class="services">
-        <article class="service">
-          <div class="number">01 / SOCIAL</div>
-          <h3>Social Media Marketing</h3>
-          <p>Build your online presence, engage your audience and grow your brand across social media platforms.</p>
-        </article>
+<section class="section portfolio" id="portfolio">
+<p class="eyebrow">OUR CREATIVE WORLD</p>
+<h2>Ideas into <span>impact.</span></h2>
+<p class="section-intro">Explore the types of creative work we can create for brands.</p>
+<div class="portfolio-grid">
+<div class="portfolio-card"><span>01</span><h3>Social Media Creatives</h3><p>Design • Visual Identity</p></div>
+<div class="portfolio-card"><span>02</span><h3>Reels & Video Editing</h3><p>Video • Storytelling</p></div>
+<div class="portfolio-card"><span>03</span><h3>Digital Campaigns</h3><p>Marketing • Promotion</p></div>
+</div>
+<p class="small">Add your real projects and client work here when ready.</p>
+</section>
 
-        <article class="service">
-          <div class="number">02 / STRATEGY</div>
-          <h3>Content Planning</h3>
-          <p>Organised content calendars and creative ideas for consistent, meaningful brand communication.</p>
-        </article>
+<section class="section about" id="about">
+<p class="eyebrow">ABOUT TS GROWTH</p>
+<h2>Creative thinking.<br><span>Purposeful growth.</span></h2>
+<p>TS GROWTH is a digital marketing agency helping businesses strengthen their online presence through creative content, graphic design and digital marketing strategies.</p>
+<p>We focus on understanding your brand, communicating its value and helping you connect with the right audience.</p>
+</section>
 
-        <article class="service">
-          <div class="number">03 / VIDEO</div>
-          <h3>Video & Reel Editing</h3>
-          <p>Engaging reels, promotional videos and polished edits that capture attention.</p>
-        </article>
+<section class="section contact" id="contact">
+<p class="eyebrow">LET'S WORK TOGETHER</p>
+<h2>Let's grow your<br><span>business together.</span></h2>
+<p class="contact-intro">Contact TS GROWTH to discuss your business and marketing goals.</p>
 
-        <article class="service">
-          <div class="number">04 / DESIGN</div>
-          <h3>Graphic Design</h3>
-          <p>Professional social media creatives, posters, banners and visual content for your brand.</p>
-        </article>
+<div class="contact-grid">
+<div class="contact-card"><h3>Phone</h3><p>+91 73500 95128</p><a href="tel:+917350095128">Call Now ↗</a></div>
+<div class="contact-card"><h3>WhatsApp</h3><p>Chat with TS GROWTH</p><a href="https://wa.me/917350095128?text=Hi%20TS%20GROWTH%2C%20I%20want%20to%20know%20about%20your%20services." target="_blank" rel="noopener noreferrer">Message Us ↗</a></div>
+<div class="contact-card"><h3>Email</h3><p>tsgrowth.digital@gmail.com</p><a href="mailto:tsgrowth.digital@gmail.com">Send Email ↗</a></div>
+<div class="contact-card"><h3>Instagram</h3><p>@_ts_growth</p><a href="https://www.instagram.com/_ts_growth?psln=MWxubzNjOHR1ZW5naQ==" target="_blank" rel="noopener noreferrer">Follow Us ↗</a></div>
+</div>
 
-        <article class="service">
-          <div class="number">05 / CONTENT</div>
-          <h3>Promotional Content</h3>
-          <p>Creative promotional content that showcases your products, services and business offers.</p>
-        </article>
+<div class="location-box">
+<p class="eyebrow">OUR SERVICE LOCATIONS</p>
+<h3>Sangamner & Akole, Maharashtra</h3>
+<p>Serving businesses in Sangamner, Akole and nearby areas.</p>
+<div class="location-links">
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Sangamner%2C+Maharashtra" target="_blank" rel="noopener noreferrer">SANGAMNER MAP ↗</a>
+<a class="btn outline" href="https://www.google.com/maps/search/?api=1&query=Akole%2C+Maharashtra" target="_blank" rel="noopener noreferrer">AKOLE MAP ↗</a>
+</div>
+</div>
 
-        <article class="service">
-          <div class="number">06 / BRANDING</div>
-          <h3>Brand Promotion</h3>
-          <p>Increase brand awareness and help your business connect with the right audience.</p>
-        </article>
+<div class="form-box">
+<p class="eyebrow">PROJECT ENQUIRY</p>
+<h2>Tell us about your <span>project.</span></h2>
+<form id="enquiryForm">
+<label for="clientName">Full Name *</label>
+<input id="clientName" type="text" placeholder="Enter your name" required>
+<label for="businessName">Business Name</label>
+<input id="businessName" type="text" placeholder="Enter your business name">
+<label for="clientPhone">Phone Number *</label>
+<input id="clientPhone" type="tel" placeholder="Enter your phone number" required>
+<label for="clientEmail">Email Address</label>
+<input id="clientEmail" type="email" placeholder="Enter your email">
+<label for="serviceNeeded">Service Required *</label>
+<select id="serviceNeeded" required>
+<option value="">Select a service</option>
+<option>Social Media Marketing</option><option>Content Planning</option><option>Video & Reel Editing</option><option>Graphic Design</option><option>Promotional Content</option><option>Brand Promotion</option><option>Meta Ads</option><option>Lead Generation</option><option>Multiple Services</option>
+</select>
+<label for="clientBudget">Estimated Budget</label>
+<select id="clientBudget"><option value="">Select your budget</option><option>Below ₹5,000</option><option>₹5,000–₹10,000</option><option>₹10,000–₹25,000</option><option>₹25,000 and above</option><option>Need a consultation</option></select>
+<label for="projectMessage">Project Details *</label>
+<textarea id="projectMessage" rows="5" placeholder="Tell us about your requirements" required></textarea>
+<button class="btn" type="submit">SEND ENQUIRY ON WHATSAPP ↗</button>
+</form>
+<p class="small">The enquiry will open in WhatsApp. Review it and press Send to submit.</p>
+</div>
+</section>
+</main>
 
-        <article class="service">
-          <div class="number">07 / ADVERTISING</div>
-          <h3>Meta Ads</h3>
-          <p>Facebook and Instagram advertising campaigns designed around your marketing objectives.</p>
-        </article>
+<footer><a class="logo" href="#home">TS <span>GROWTH.</span></a><p>Digital Strategies. Real Growth.</p><p>© 2026 TS GROWTH. All rights reserved.</p></footer>
+<a class="whatsapp-float" href="https://wa.me/917350095128?text=Hi%20TS%20GROWTH%2C%20I%20want%20to%20know%20about%20your%20services." target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
 
-        <article class="service">
-          <div class="number">08 / PERFORMANCE</div>
-          <h3>Lead Generation</h3>
-          <p>Marketing campaigns focused on attracting potential customers and generating enquiries.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section portfolio" id="portfolio">
-      <p class="eyebrow">OUR CREATIVE WORLD</p>
-      <h2>Ideas into <span>impact.</span></h2>
-      <p class="section-intro">
-        From scroll-stopping creatives to engaging videos,
-        we create content that helps brands communicate better.
-      </p>
-
-      <div class="portfolio-grid">
-        <div class="portfolio-card">
-          <span>01</span>
-          <h3>Social Media Creatives</h3>
-          <p>Design • Visual Identity</p>
-        </div>
-        <div class="portfolio-card">
-          <span>02</span>
-          <h3>Reels & Video Editing</h3>
-          <p>Video • Storytelling</p>
-        </div>
-        <div class="portfolio-card">
-          <span>03</span>
-          <h3>Digital Campaigns</h3>
-          <p>Marketing • Promotion</p>
-        </div>
-      </div>
-      <p class="small">
-        These are service categories. Add your actual project images and client work when ready.
-      </p>
-    </section>
-
-    <section class="section about" id="about">
-      <p class="eyebrow">ABOUT TS GROWTH</p>
-      <h2>Creative thinking.<br><span>Purposeful growth.</span></h2>
-      <p>
-        TS GROWTH is a digital marketing agency helping businesses
-        strengthen their online presence through thoughtful content,
-        creative design and digital marketing strategies.
-      </p>
-      <p>
-        Our focus is simple: understand your brand, communicate its value
-        and help you connect with your target audience.
-      </p>
-    </section>
-
-    <section class="section contact" id="contact">
-      <p class="eyebrow">LET'S WORK TOGETHER</p>
-      <h2>Your next big move<br>starts <span>here.</span></h2>
-      <p>
-        Ready to grow your business online? Get in touch with TS GROWTH
-        to discuss your project and marketing goals.
-      </p>
-      <div class="contact-actions">
-        <a class="btn" href="mailto:tsgrowth.digital@gmail.com">EMAIL US ↗</a>
-        <a class="btn btn-outline" href="https://www.instagram.com/tsgrowth.digital/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
-      </div>
-      <p class="small">
-        Check that your Instagram username and email are correct before sharing the website.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <a class="logo" href="#home">TS <span>GROWTH.</span></a>
-    <p>Digital Strategies. Real Growth.</p>
-    <p class="small">© 2026 TS GROWTH. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+<script>
+document.getElementById("enquiryForm").addEventListener("submit",function(event){
+event.preventDefault();
+const name=document.getElementById("clientName").value.trim();
+const business=document.getElementById("businessName").value.trim();
+const phone=document.getElementById("clientPhone").value.trim();
+const email=document.getElementById("clientEmail").value.trim();
+const service=document.getElementById("serviceNeeded").value;
+const budget=document.getElementById("clientBudget").value;
+const message=document.getElementById("projectMessage").value.trim();
+const enquiry=["Hello TS GROWTH! I want to enquire about your services.","","Name: "+name,"Business: "+(business||"Not provided"),"Phone: "+phone,"Email: "+(email||"Not provided"),"Service: "+service,"Budget: "+(budget||"Not specified"),"Project Details: "+message].join("\\n");
+window.open("https://wa.me/917350095128?text="+encodeURIComponent(enquiry),"_blank","noopener,noreferrer");
+});
+</script>
 </body>
 </html>
